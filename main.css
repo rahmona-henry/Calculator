@@ -53,7 +53,7 @@ background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
 border-radius: 10px;
 }
 
-#number a {
+#numbers a {
 display:block;
 float:left;
 text-align: center;
@@ -68,4 +68,4 @@ background:-webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DC
 background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
 border-radius: 10px;
     
-    }
+}
