@@ -25,3 +25,12 @@ body, div, a {
   font-size: 60px;
   border-radius: 10px;
 }
+
+
+#numbers {
+margin: 0px;
+}
+
+#operators {
+margin: 0px;
+}
