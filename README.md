@@ -1,33 +1,21 @@
 # Calculator
 
-Synopsis
+Synopsis:
 
-At the top of the file there should be a short introduction and/ or overview that explains what the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+This is a simple calculator that has been built using HTML, CSS and JavaScript.
+I have used a Code Academy tutorial to help build this. At the moment there is not much fuctionality and I am working towards getting the equals operator to work. I have used several .click event listeners to deal with the basic button commands.
 
-Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
-Motivation
-
-A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+Motivation:
+Sprint 6 - Build Something Fun - EDA/Karearea 2015/2016 
 
 Installation
 
-Provide code examples and explanations of how to get the project.
 
 API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-Tests
-
-Describe and show how to run the tests with code examples.
+Tests:
+Ongoing
 
 Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
 License
-
-A short snippet describing the license (MIT, Apache, etc.)
