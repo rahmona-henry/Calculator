@@ -30,10 +30,22 @@ $(document).ready(function(){
  $("#operators a").not("#equals").click(function(){
         operator = $(this).text();  //Take the .text() of the button, and set the operator variable to that.
         newnumber = number;         //Set newnumber to number
-        number = "";                 //Set the .text() of totaldiv to "0"
+        number = "";                 //Set number to ""
+        totaldiv.text("0");         //Set the .text() of totaldiv to "0"
+
+//.click() Event listener for the #clear and #clearall buttons. When the clear button is clicked, it only
+// needs to clear the number currently being inputted, but when the clearall button is clicked, it should clear both numbers stored.
+$("#operators > a").not("#equals").click(function(){
+        operator = $(this).text();
+        newnumber = number;
+        number = "";
         totaldiv.text("0");
+    });
+
+
 
 
 
 });
+
 
