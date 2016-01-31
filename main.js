@@ -35,14 +35,39 @@ $(document).ready(function(){
 
 //.click() Event listener for the #clear and #clearall buttons. When the clear button is clicked, it only
 // needs to clear the number currently being inputted, but when the clearall button is clicked, it should clear both numbers stored.
-$("#operators > a").not("#equals").click(function(){
-        operator = $(this).text();
-        newnumber = number;
-        number = "";
-        totaldiv.text("0");
-    });
+   $("#clear").click(function() {
+     number = "";
+      totaldiv.text("0");
+      });
+     $("#clearall").click(function() {
+     number = "";
+     totaldiv.text("0");
+     newnumber = "";
+     });
+     
+   $("#equals").click(function(){
+    number = parseInt(number,10);
+    newnumber = parseInt(newnumber,10);
+    var result;
+    if (operator==="+"){
+        result = newnumber+number;
+    }
+    else if (operator==="-"){
+        result = newnumber - number;
+    }
+    else if (operator==="*"){
+        result = newnumber * number;
+    }
+    else if (operator==="/"){
+        result = newnumber / number;
+    }
 
-
+    result = result.toString(10);
+    totaldiv.text(result);
+    testNumLength(result);
+    number = "";
+    newnumber = "";
+});
 
 
 
