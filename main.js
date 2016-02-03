@@ -15,29 +15,29 @@ $(document).ready(function(){
     
     var totaldiv = $("#total");
     totaldiv.text("0");
-    $("#numbers").not("#clear,#clearall").click(function(){
+    $("#numbers a").not("#clear,#clearall").click(function(){
         number += $(this).text();
         totaldiv.text(number);
         testNumLength(number);
     });
-    $("#operators").not("#equals").click(function(){
+    $("#operators a").not("#equals").click(function(){
         operator = $(this).text();
         newnumber = number;
         number = "";
         totaldiv.text("0");
     });
 
-      $("#clear").click(function() {
+      $("#clear a").click(function() {
      number = "";
       totaldiv.text("0");
       });
-     $("#clearall").click(function() {
+     $("#clearall a").click(function() {
      number = "";
      totaldiv.text("0");
      newnumber = "";
      });
      
-   $("#equals").click(function(){
+   $("#equals a").click(function(){
     number = parseInt(number,10);
     newnumber = parseInt(newnumber,10);
     var result;
