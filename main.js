@@ -28,16 +28,12 @@ $(document).ready(function () {
     totaldiv.text('0');
   });
 
-  $('#clear').click(function () {
-    number = '';
-    totaldiv.text('0');
-  });
-
-  $('#clearall').click(function () {
+  $('#clear, #clearall').click(function () {
     number = ' ';
     totaldiv.text('0');
-    newnumber = ' ';
-  });
+    if($(this).attr('id') = 'clearall') {
+    new number = ' ';
+    }
 
   $('#equals').click(function () {
     number = parseInt(number, 10);
