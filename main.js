@@ -15,42 +15,42 @@ $(document).ready(function () {
   var totaldiv = $('#total');
   totaldiv.text('0');
 
-  $('#numbers a').not('#clear,#clearall').click(function () {
-    number += this.html();
+  $('#numbers > a').not('#clear,#clearall').click(function () {
+    number += this.text();
     totaldiv.text(number);
     testNumLength(number);
   });
 
-  $('#operators a').not('#equals').click(function () {
+  $('#operators > a').not('#equals').click(function () {
     operator = $(this).text();
     newnumber = number;
     number = ' ';
     totaldiv.text('0');
   });
 
-  $('#clear a').click(function () {
+  $('#clear').click(function () {
     number = '';
     totaldiv.text('0');
   });
 
-  $('#clearall a').click(function () {
+  $('#clearall').click(function () {
     number = ' ';
     totaldiv.text('0');
     newnumber = ' ';
   });
 
-  $('#equals a').click(function () {
+  $('#equals').click(function () {
     number = parseInt(number, 10);
     newnumber = parseInt(newnumber, 10);
     var result;
         if (operator === '+') {
       result = newnumber + number;
     } else if (operator === '-'){
-
       result = newnumber - number;
-    } else if (operator === '*') {
 
+    } else if (operator === '*') {
       result = newnumber * number;
+      
     } else if (operator === '/') {
       result = newnumber / number;
     }
