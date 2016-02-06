@@ -15,13 +15,13 @@ $(document).ready(function () {
   var totaldiv = $('#total');
   totaldiv.text('0');
 
-  $('#numbers > a').not('#clear,#clearall').click(function () {
+  $('#numbers a').not('#clear,#clearall').click(function () {
     number += this.text();
     totaldiv.text(number);
     testNumLength(number);
   });
 
-  $('#operators > a').not('#equals').click(function () {
+  $('#operators a').not('#equals').click(function () {
     operator = $(this).text();
     newnumber = number;
     number = ' ';
@@ -50,7 +50,7 @@ $(document).ready(function () {
 
     } else if (operator === '*') {
       result = newnumber * number;
-      
+
     } else if (operator === '/') {
       result = newnumber / number;
     }
