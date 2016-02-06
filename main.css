@@ -13,7 +13,7 @@ body,
   border: 3px solid 000000;
   border-radius: 10px;
   height: 460px;
-  margin: 10px auto;  //centers the calculator in the browser window//
+  margin: 10px auto;  /*centers the calculator in the browser window*/
   padding: 5px;
   width: 310px;
 }
@@ -62,7 +62,7 @@ body,
 }
 
 #numbers a {
-  
+
   background:-webkit-gradient(linear, left top, left bottom, from(#ededed), to(#dcdcdc));
   background: -moz-linear-gradient(top, #ededed, #dcdcdc);
   border-radius: 10px;
