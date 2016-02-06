@@ -19,8 +19,11 @@ To receive the clicks from the operators and the numbers, use .click() listeners
 
 Set up a single .click() listener that when the user clicks a #numbers a (Use .not() to exclude the #clear and #clearall buttons), will take the .text() of the button, append that to number, set the .text() of totaldiv to number, and finally call testNumLength, passing in number as the parameter.
 
-
-
+Add a single .click() to handle all of the #operators a clicks, except for the #equals button (Again, use .not() to exclude it). The .click() will need to:
+Take the .text() of the button, and set the operator variable to that.
+Set newnumber to number.
+Set number to ""
+Set the .text() of totaldiv to "0"
 
 
 

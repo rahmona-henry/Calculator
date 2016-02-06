@@ -1,71 +1,79 @@
-body, div, a {
-    padding:0;
-    margin:0;
-    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-    cursor:pointer; 
+body,
+ div,
+ a {
+  cursor: pointer;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin: 0;
+
 }
 
 #calculator {
- width: 310px;
- height: 460px;
- margin: 10px auto;  /*centers it in the browser window*/
- padding:5px;
- background-color:#FFA500;
- border: 3px solid black;
- border-radius: 10px;
+
+  background-color: #ffa500;
+  border: 3px solid 000000;
+  border-radius: 10px;
+  height: 460px;
+  margin: 10px auto;  //centers the calculator in the browser window//
+  padding: 5px;
+  width: 310px;
 }
 
 
 #total {
-  height: 70px;
-  width: 300px;
-  margin: 0px;
-  margin-bottom: 5px;
-  padding: 0px 5px;
+
   background-color: #FFF;
-  text-align: right;
-  font-size: 60px;
   border-radius: 10px;
- 
+  font-size: 60px;
+  height: 70px;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  text-align: right;
+  width: 300px;
+
 }
 
 #numbers {
-margin: 0px;
+
+  margin: 0;
 }
 
 #operators {
-margin: 0px;
+
+  margin: 0;
 }
 
 #operators a {
-display: block;
-width: 45px;
-height: 45px;
-float: left;
-padding: 2px;
-margin: 5px 6px; 
-text-align: center;
-text-decoration: none;
-color: black;
-font-size:39px;
-background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
-background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
-border-radius: 10px;
+
+  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#dcdcdc));
+  background: -moz-linear-gradient(top, #ededed, #dcdcdc);
+  border-radius: 10px;
+  color: 000000;
+  display: block;
+  float: left;
+  font-size: 39px;
+  height: 45px;
+  margin: 5px 6px;
+  padding: 2px;
+  text-align: center;
+  text-decoration: none;
+  width: 45px;
+
 }
 
 #numbers a {
-display:block;
-float:left;
-text-align: center;
-color: black;
-font-size: 43px;
-text-decoration: none;
-width: 50px;
-height: 50px;
-padding: 10px;
-margin: 5px 15px;
-background:-webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
-background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
-border-radius: 10px;
-    
+  
+  background:-webkit-gradient(linear, left top, left bottom, from(#ededed), to(#dcdcdc));
+  background: -moz-linear-gradient(top, #ededed, #dcdcdc);
+  border-radius: 10px;
+  color: 000000;
+  display: block;
+  float: left;
+  font-size: 43px;
+  height: 50px;
+  margin: 5px 15px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 50px;
 }

@@ -1,67 +1,65 @@
-$(document).ready(function(){
-    var testNumLength = function(number) {
-        if (number.length > 9) {
-            totaldiv.text(number.substr(number.length-9,9));
-            if (number.length > 15) {
-                number = "";
-                totaldiv.text("Err");
-            }
-        } 
-    };
+$(document).ready(function () {
+  var testNumLength = function (number) {
+    if (number.length > 9) {
+      totaldiv.text(number.substr(number.length - 9, 9));
+      if (number.length > 15) {
+        number = ' ';
+        totaldiv.text('Error');
+      }
+    }
+  };
 
-    var number = "";
-    var newnumber = "";
-    var operator = "";
-    
-    var totaldiv = $("#total");
-    totaldiv.text("0");
-    $("#numbers a").not("#clear,#clearall").click(function(){
-        number += $(this).text();
-        totaldiv.text(number);
-        testNumLength(number);
-    });
-    $("#operators a").not("#equals").click(function(){
-        operator = $(this).text();
-        newnumber = number;
-        number = "";
-        totaldiv.text("0");
-    });
+  var number = ' ';
+  var newnumber = ' ';
+  var operator = ' ';
+  var totaldiv = $('#total');
+  totaldiv.text('0');
 
-      $("#clear a").click(function() {
-     number = "";
-      totaldiv.text("0");
-      });
-     $("#clearall a").click(function() {
-     number = "";
-     totaldiv.text("0");
-     newnumber = "";
-     });
-     
-   $("#equals a").click(function(){
-    number = parseInt(number,10);
-    newnumber = parseInt(newnumber,10);
+  $('#numbers a').not('#clear,#clearall').click(function () {
+    number += this.html();
+    totaldiv.text(number);
+    testNumLength(number);
+  });
+
+  $('#operators a').not('#equals').click(function () {
+    operator = $(this).text();
+    newnumber = number;
+    number = ' ';
+    totaldiv.text('0');
+  });
+
+  $('#clear a').click(function () {
+    number = '';
+    totaldiv.text('0');
+  });
+
+  $('#clearall a').click(function () {
+    number = ' ';
+    totaldiv.text('0');
+    newnumber = ' ';
+  });
+
+  $('#equals a').click(function () {
+    number = parseInt(number, 10);
+    newnumber = parseInt(newnumber, 10);
     var result;
-    if (operator==="+"){
-        result = newnumber+number;
-    }
-    else if (operator==="-"){
-        result = newnumber - number;
-    }
-    else if (operator==="*"){
-        result = newnumber * number;
-    }
-    else if (operator==="/"){
-        result = newnumber / number;
+        if (operator === '+') {
+      result = newnumber + number;
+    } else if (operator === '-'){
+
+      result = newnumber - number;
+    } else if (operator === '*') {
+
+      result = newnumber * number;
+    } else if (operator === '/') {
+      result = newnumber / number;
     }
 
     result = result.toString(10);
     totaldiv.text(result);
     testNumLength(result);
-    number = "";
-    newnumber = "";
+    number = ' ';
+    newnumber = ' ';
+  });
 });
-   
-});
-//.not(#equals
-
-
+ 
